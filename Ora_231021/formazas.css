@@ -1,0 +1,51 @@
+nav{
+    grid-area: n;
+    
+}
+
+#fotartalom{
+    grid-area: ft;
+    border: double 1px black;
+    border-top: none;
+}
+
+#bejelentkezes{
+    grid-area: b;
+}
+#jobbt{
+    grid-area: jt;
+}
+#balt{
+    grid-area: bt;
+}
+#keszitette{
+    grid-area: k;
+    border-top: 1px black dashed;
+}
+#osztaly{
+    grid-area: o;
+}
+#elerhetoseg{
+    grid-area: e;
+    border: solid black 1px;
+}
+#fotartalom, #bejelentkezes{
+    text-align: center;
+}
+#osztaly, #jobbt{
+    text-align: right;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    'n n ft b b'
+    'n n ft bt jt'
+    'k o e e e';
+    
+}
+main *{
+    padding: 5px;
+}
